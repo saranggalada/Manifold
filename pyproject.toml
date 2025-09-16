@@ -3,19 +3,33 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "manifold"
+name = "vulcanpy"
 version = "0.1.0"
-description = "YAML-driven DSL for no-code AI/ML model building and training pipelines"
+description = "A YAML-driven DSL for composing and training AI/ML models without writing code."
 readme = "README.md"
 license = {text = "Apache-2.0"}
 authors = [{name="Sarang Galada", email="sarang.galada@gmail.com"}]
 requires-python = ">=3.8"
-keywords = ["DSL", "machine-learning", "PyTorch", "YAML", "model-builder"]
+
+dependencies = [
+  "torch>=2.0.0",
+]
+
+keywords = ["DSL", "machine-learning", "PyTorch", "YAML", "model-builder", "training"]
+
 classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent"
 ]
+
+[project.urls]
+Homepage = "https://github.com/saranggalada/Vulcan"
+Documentation = "https://github.com/saranggalada/Vulcan#readme"
+Source = "https://github.com/saranggalada/Vulcan"
+Issues = "https://github.com/saranggalada/Vulcan/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]

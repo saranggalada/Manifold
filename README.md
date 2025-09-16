@@ -1,2 +1,2 @@
-# Manifold
-YAML-driven DSL for no-code AI/ML model building and training pipelines.
+# Vulcan
+A YAML-driven DSL for composing and training AI/ML models without writing code.
