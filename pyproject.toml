@@ -1,13 +1,21 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "manifoldx"
-version = "0.0.1"
-description = "No-code YAML-driven Domain-Specific Language (DSL) for building AI/ML model architectures and training pipelines."
+name = "manifold"
+version = "0.1.0"
+description = "YAML-driven DSL for no-code AI/ML model building and training pipelines"
 readme = "README.md"
-license = { text = "Apache-2.0" }
+license = {text = "Apache-2.0"}
 authors = [{name="Sarang Galada", email="sarang.galada@gmail.com"}]
 requires-python = ">=3.8"
-classifiers = ["Programming Language :: Python :: 3"]
+keywords = ["DSL", "machine-learning", "PyTorch", "YAML", "model-builder"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
