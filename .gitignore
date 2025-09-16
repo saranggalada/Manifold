@@ -1,0 +1,7 @@
+/dist/
+vulcanx.egg-info/
+venv/
+.vscode/
+*.zip
+*.tar
+*.tar.gz
